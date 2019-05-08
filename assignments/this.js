@@ -35,12 +35,13 @@
 //                                      Principle 3
 //                              code example for New Binding
 
-const ConstructorFn = function(x, y , z) {
-    this.x = x;
-    this.y = y;
-    this.z = z;
+const Person = function(name, age , favColor) {
+    this.name = name;
+    this.age = age;
+    this.favColor = favColor;
 }
-const thing = new ConstructorFn(1, 2, 3);
+const joe = new Person("Joe", 35, "blue");
+console.log(joe);
 
 //                                      Principle 4
 //                               code example for Explicit Binding (done)
